@@ -1,0 +1,62 @@
+/* Reset de estilos para eliminar márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del menú */
+.menu {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos del submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    width: 200px;
+    top: 40px;
+    left: 0;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.menu ul li .submenu li {
+    border-bottom: 1px solid #777;
+}
+
+.menu ul li .submenu li:last-child {
+    border-bottom: none;
+}
+
+.menu ul li .submenu li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li .submenu li a:hover {
+    background-color: #444;
+}
